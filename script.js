@@ -48,19 +48,36 @@ function type(){
 type();
 
 
-// ================= CONTACT FORM =================
+// ================= CONTACT FORM (UPDATED FOR CRM) =================
 
 document.addEventListener("DOMContentLoaded", function(){
 
     const form = document.querySelector(".contact-form");
 
     if(form){
-        form.addEventListener("submit", function(e){
+        form.addEventListener("submit", async function(e){
             e.preventDefault();
 
-            alert("Message sent successfully! 🚀");
+            const name = this[0].value;
+            const email = this[1].value;
+            const message = this[2].value;
 
-            form.reset();
+            try {
+                await fetch("http://localhost:5000/leads", {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json"
+                    },
+                    body: JSON.stringify({ name, email, message })
+                });
+
+                alert("Message Sent Successfully! 🚀");
+                form.reset();
+
+            } catch (error) {
+                alert("Error sending message ❌");
+                console.error(error);
+            }
         });
     }
 
