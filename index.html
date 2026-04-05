@@ -6,22 +6,6 @@
 
 <title>Piyush Kumar Portfolio</title>
 
-<!-- ✅ SEO META TAGS -->
-<meta name="description" content="Piyush Kumar - Full Stack Developer portfolio showcasing skills, projects, and web development work.">
-<meta name="keywords" content="Piyush Kumar, portfolio, web developer, full stack developer, HTML, CSS, JavaScript, projects">
-<meta name="author" content="Piyush Kumar">
-<meta name="robots" content="index, follow">
-
-<!-- ✅ SOCIAL / OPEN GRAPH -->
-<meta property="og:title" content="Piyush Kumar Portfolio">
-<meta property="og:description" content="Explore my projects and skills as a Full Stack Developer.">
-<meta property="og:image" content="profile.jpg">
-<meta property="og:type" content="website">
-
-<!-- ✅ FAVICON -->
-<link rel="icon" href="profile.jpg">
-
-<!-- CSS -->
 <link rel="stylesheet" href="style.css">
 
 <link rel="stylesheet"
@@ -32,11 +16,13 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 
 <div class="page">
 
+<!-- NAV -->
 <nav>
 <h2 class="logo">Portfolio</h2>
 <button class="btn-home" onclick="openProfile()">Home</button>
 </nav>
 
+<!-- HERO -->
 <section class="hero">
 
 <div class="hero-image">
@@ -44,13 +30,12 @@ href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
 </div>
 
 <div class="hero-text">
-
 <h1>Hello, I'm</h1>
 <h2>Piyush Kumar</h2>
 <h3>I’m a <span id="typing"></span></h3>
 
 <p>
-Aspiring Full Stack Developer with a strong interest in building modern and responsive web applications.
+Aspiring Full Stack Developer with a strong interest in building modern web applications.
 </p>
 
 <div class="buttons">
@@ -62,13 +47,8 @@ Aspiring Full Stack Developer with a strong interest in building modern and resp
 <i class="fab fa-linkedin"></i>
 </a>
 
-<!-- ✅ FIXED GITHUB LINK -->
 <a href="https://github.com/piyushkr21" target="_blank">
 <i class="fab fa-github"></i>
-</a>
-
-<a href="#">
-<i class="fab fa-instagram"></i>
 </a>
 </div>
 
@@ -76,6 +56,7 @@ Aspiring Full Stack Developer with a strong interest in building modern and resp
 
 </section>
 
+<!-- SKILLS -->
 <section id="skills">
 <h2 class="section-title">My Skills</h2>
 
@@ -86,29 +67,45 @@ Aspiring Full Stack Developer with a strong interest in building modern and resp
 <div class="skill-card">JavaScript</div>
 <div class="skill-card">Java</div>
 <div class="skill-card">Python</div>
+<div class="skill-card">Node.js</div>
+<div class="skill-card">Express.js</div>
+<div class="skill-card">MongoDB</div>
 </div>
-
 </section>
 
+<!-- PROJECTS -->
 <section id="projects">
 <h2 class="section-title">Projects</h2>
 
 <div class="projects-container">
 
+<!-- ✅ FIRST PROJECT (CRM - REPLACED) -->
 <div class="project-card">
-<h3>Portfolio Website</h3>
-<p>Personal portfolio website built using HTML, CSS and JavaScript.</p>
+<h3>Client Lead Management CRM</h3>
+
+<p>
+CRM to manage client leads generated from website contact forms.
+Includes dashboard, lead tracking and CRUD operations.
+</p>
+
+<p><b>Tech:</b> HTML, CSS, JavaScript, Node.js, MongoDB</p>
+
+<a href="https://piyushkr21.github.io/mini-crm-project/" target="_blank">
+<button class="btn-home">View CRM Project</button>
+</a>
+
 </div>
 
+<!-- SECOND PROJECT -->
 <div class="project-card">
 <h3>Java Algorithm Programs</h3>
 <p>Collection of Java programs solving DSA problems.</p>
 </div>
 
 </div>
-
 </section>
 
+<!-- CONTACT -->
 <section id="contact">
 <h2 class="section-title">Contact Me</h2>
 
@@ -118,19 +115,16 @@ Aspiring Full Stack Developer with a strong interest in building modern and resp
 <textarea placeholder="Your Message" rows="5" required></textarea>
 <button type="submit">Send Message</button>
 </form>
-
 </section>
 
 </div>
 
+<!-- PROFILE PANEL -->
 <div id="profilePanel" class="profile-panel">
 <h2>My Details</h2>
 <p><b>Name:</b> Piyush Kumar</p>
-<p><b>Age:</b> 21</p>
-<p><b>Email:</b> piyushkumar5220@com</p>
-<p><b>Phone:</b> +91 XXXXXXXX</p>
-<p><b>Address:</b>Bokaro , Jharkhand (829301)</p>
-<p><b>Blood Group:</b> O+</p>
+<p><b>Email:</b> piyushkumar5220@gmail.com</p>
+<p><b>Address:</b> Bokaro, Jharkhand</p>
 
 <button onclick="closeProfile()">Close</button>
 </div>
